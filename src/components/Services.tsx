@@ -50,7 +50,7 @@ export default function Services({ onBookService }: ServicesProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Award className="w-4 h-4" />
             <span>Our Services</span>
           </div>
@@ -81,12 +81,12 @@ export default function Services({ onBookService }: ServicesProps) {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute top-4 left-4">
-                    <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center">
+                    <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                   </div>
                   <div className="absolute bottom-4 right-4">
-                    <span className="bg-white/90 backdrop-blur-sm text-emerald-800 px-3 py-1 rounded-full text-sm font-semibold">
+                    <span className="bg-white/90 backdrop-blur-sm text-pink-800 px-3 py-1 rounded-full text-sm font-semibold">
                       {service.price}
                     </span>
                   </div>
@@ -101,7 +101,7 @@ export default function Services({ onBookService }: ServicesProps) {
                   <ul className="space-y-2 mb-6">
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-center space-x-2 text-sm text-gray-600">
-                        <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full"></div>
+                        <div className="w-1.5 h-1.5 bg-pink-500 rounded-full"></div>
                         <span>{feature}</span>
                       </li>
                     ))}
@@ -110,7 +110,7 @@ export default function Services({ onBookService }: ServicesProps) {
                   {/* CTA */}
                   <button
                     onClick={() => onBookService(service.id)}
-                    className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+                    className="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors duration-200 flex items-center justify-center space-x-2"
                   >
                     <Clock className="w-4 h-4" />
                     <span>Book Now</span>

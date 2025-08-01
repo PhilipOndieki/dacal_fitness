@@ -58,7 +58,7 @@ export default function Contact() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Mail className="w-4 h-4" />
             <span>Get In Touch</span>
           </div>
@@ -77,9 +77,9 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Send us a message</h3>
             
             {isSubmitted && (
-              <div className="mb-6 p-4 bg-emerald-50 border border-emerald-200 rounded-lg flex items-center space-x-2">
-                <CheckCircle className="w-5 h-5 text-emerald-600" />
-                <span className="text-emerald-800">Thank you! We'll get back to you soon.</span>
+              <div className="mb-6 p-4 bg-pink-50 border border-pink-200 rounded-lg flex items-center space-x-2">
+                <CheckCircle className="w-5 h-5 text-pink-600" />
+                <span className="text-pink-800">Thank you! We'll get back to you soon.</span>
               </div>
             )}
 
@@ -96,7 +96,7 @@ export default function Contact() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors"
                     placeholder="Your full name"
                   />
                 </div>
@@ -111,7 +111,7 @@ export default function Contact() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -128,7 +128,7 @@ export default function Contact() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors"
                     placeholder="(555) 123-4567"
                   />
                 </div>
@@ -141,7 +141,7 @@ export default function Contact() {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors"
                   >
                     <option value="">Select a service</option>
                     <option value="personal-training">Personal Training</option>
@@ -164,14 +164,14 @@ export default function Contact() {
                   rows={5}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors resize-none"
                   placeholder="Tell us about your fitness goals, experience level, or any questions you have..."
                 ></textarea>
               </div>
 
               <button
                 type="submit"
-                className="w-full bg-emerald-600 text-white py-4 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+                className="w-full bg-pink-500 text-white py-4 rounded-lg font-semibold hover:bg-pink-600 transition-colors duration-200 flex items-center justify-center space-x-2"
               >
                 <Send className="w-5 h-5" />
                 <span>Send Message</span>
@@ -195,7 +195,7 @@ export default function Contact() {
                 const IconComponent = info.icon;
                 return (
                   <div key={index} className="flex items-start space-x-4 p-6 bg-gray-50 rounded-xl">
-                    <div className="w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-pink-500 rounded-lg flex items-center justify-center flex-shrink-0">
                       <IconComponent className="w-6 h-6 text-white" />
                     </div>
                     <div>

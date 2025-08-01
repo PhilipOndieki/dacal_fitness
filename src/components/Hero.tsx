@@ -23,16 +23,16 @@ export default function Hero({ onBookNow }: HeroProps) {
         <div className="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
           <div className="space-y-8">
             {/* Badge */}
-            <div className="inline-flex items-center space-x-2 bg-emerald-600/20 backdrop-blur-sm border border-emerald-400/30 rounded-full px-4 py-2">
-              <Star className="w-4 h-4 text-emerald-400 fill-current" />
-              <span className="text-emerald-100 text-sm font-medium">Rated #1 Adventure Company</span>
+            <div className="inline-flex items-center space-x-2 bg-pink-500/20 backdrop-blur-sm border border-pink-400/30 rounded-full px-4 py-2">
+              <Star className="w-4 h-4 text-pink-300 fill-current" />
+              <span className="text-pink-100 text-sm font-medium">Rated #1 Adventure Company</span>
             </div>
 
             {/* Main Heading */}
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
                 Transform Your
-                <span className="block text-emerald-400">Adventure Journey</span>
+                <span className="block text-pink-300">Adventure Journey</span>
               </h1>
               <p className="text-xl text-gray-200 max-w-2xl">
                 Discover your potential through personalized fitness training, guided mountain adventures, 
@@ -44,7 +44,7 @@ export default function Hero({ onBookNow }: HeroProps) {
             <div className="flex flex-col sm:flex-row gap-4">
               <button
                 onClick={onBookNow}
-                className="group inline-flex items-center justify-center space-x-2 bg-emerald-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-emerald-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="group inline-flex items-center justify-center space-x-2 bg-pink-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-pink-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <span>Book Your Adventure</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

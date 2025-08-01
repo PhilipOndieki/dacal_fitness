@@ -37,9 +37,9 @@ export default function Blog() {
 
   const getCategoryColor = (category: string) => {
     switch (category.toLowerCase()) {
-      case 'adventure': return 'bg-emerald-100 text-emerald-800';
+      case 'adventure': return 'bg-pink-100 text-pink-800';
       case 'fitness': return 'bg-blue-100 text-blue-800';
-      case 'wellness': return 'bg-purple-100 text-purple-800';
+      case 'wellness': return 'bg-rose-100 text-rose-800';
       default: return 'bg-gray-100 text-gray-800';
     }
   };
@@ -49,7 +49,7 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Tag className="w-4 h-4" />
             <span>Latest Insights</span>
           </div>
@@ -101,7 +101,7 @@ export default function Blog() {
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-emerald-600 transition-colors">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-pink-600 transition-colors">
                   {post.title}
                 </h3>
 
@@ -115,7 +115,7 @@ export default function Blog() {
                   <div className="text-sm text-gray-500">
                     By {post.author}
                   </div>
-                  <button className="group/btn flex items-center space-x-1 text-emerald-600 hover:text-emerald-700 font-medium text-sm">
+                  <button className="group/btn flex items-center space-x-1 text-pink-600 hover:text-pink-700 font-medium text-sm">
                     <span>Read More</span>
                     <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                   </button>
@@ -134,9 +134,9 @@ export default function Blog() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 w-full sm:w-auto"
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 w-full sm:w-auto"
             />
-            <button className="bg-emerald-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-200 w-full sm:w-auto">
+            <button className="bg-pink-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors duration-200 w-full sm:w-auto">
               Subscribe
             </button>
           </div>

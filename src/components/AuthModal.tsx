@@ -135,7 +135,8 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
             <form onSubmit={handleVerificationSubmit} className="space-y-6">
               <div className="text-center mb-6">
                 <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Mail className="w-8 h-8 text-emerald-600" />
+                <div className="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Mail className="w-8 h-8 text-pink-600" />
                 </div>
                 <p className="text-gray-600">
                   We've sent a 6-digit verification code to
@@ -152,7 +153,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                   maxLength={6}
                   value={formData.verificationCode}
                   onChange={(e) => setFormData({ ...formData, verificationCode: e.target.value.replace(/\D/g, '') })}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 text-center text-2xl tracking-widest"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 text-center text-2xl tracking-widest"
                   placeholder="000000"
                 />
                 {errors.verificationCode && (
@@ -165,7 +166,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
 
               <button
                 type="submit"
-                className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+                className="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors"
               >
                 Verify & Create Account
               </button>
@@ -174,7 +175,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                 <button
                   type="button"
                   onClick={resendCode}
-                  className="text-emerald-600 hover:text-emerald-700 text-sm font-medium"
+                  className="text-pink-600 hover:text-pink-700 text-sm font-medium"
                 >
                   Resend Code
                 </button>
@@ -194,7 +195,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                       type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                      className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
                       placeholder="Your full name"
                     />
                   </div>
@@ -217,7 +218,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                     type="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
                     placeholder="your@email.com"
                   />
                 </div>
@@ -239,7 +240,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                     type={showPassword ? 'text' : 'password'}
                     value={formData.password}
                     onChange={(e) => handlePasswordChange(e.target.value)}
-                    className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                    className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
                     placeholder="Your password"
                   />
                   <button
@@ -255,7 +256,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                   <div className="mt-2">
                     <div className="flex items-center justify-between text-sm mb-1">
                       <span className="text-gray-600">Password strength:</span>
-                      <span className={`font-medium ${passwordStrength >= 3 ? 'text-green-600' : passwordStrength >= 2 ? 'text-blue-600' : 'text-red-600'}`}>
+                      <span className={`font-medium ${passwordStrength >= 3 ? 'text-pink-600' : passwordStrength >= 2 ? 'text-blue-600' : 'text-red-600'}`}>
                         {getPasswordStrengthText()}
                       </span>
                     </div>
@@ -305,7 +306,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                       type={showConfirmPassword ? 'text' : 'password'}
                       value={formData.confirmPassword}
                       onChange={(e) => setFormData({ ...formData, confirmPassword: e.target.value })}
-                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                      className="w-full pl-10 pr-12 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
                       placeholder="Confirm your password"
                     />
                     <button
@@ -327,7 +328,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
 
               <button
                 type="submit"
-                className="w-full bg-emerald-600 text-white py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors"
+                className="w-full bg-pink-500 text-white py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors"
               >
                 {isLogin ? 'Sign In' : 'Create Account'}
               </button>
@@ -336,7 +337,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                 <div className="text-center">
                   <button
                     type="button"
-                    className="text-emerald-600 hover:text-emerald-700 text-sm font-medium"
+                    className="text-pink-600 hover:text-pink-700 text-sm font-medium"
                   >
                     Forgot your password?
                   </button>
@@ -354,7 +355,7 @@ export default function AuthModal({ isOpen, onClose, onLogin }: AuthModalProps) 
                     setErrors({});
                     setFormData({ name: '', email: '', password: '', confirmPassword: '', verificationCode: '' });
                   }}
-                  className="text-emerald-600 hover:text-emerald-700 font-medium"
+                  className="text-pink-600 hover:text-pink-700 font-medium"
                 >
                   {isLogin ? 'Sign up' : 'Sign in'}
                 </button>

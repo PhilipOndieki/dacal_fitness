@@ -33,7 +33,7 @@ export default function About() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Heart className="w-4 h-4" />
             <span>About Dacal</span>
           </div>
@@ -52,7 +52,7 @@ export default function About() {
             const IconComponent = stat.icon;
             return (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                   <IconComponent className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-3xl font-bold text-gray-900 mb-1">{stat.number}</div>
@@ -72,7 +72,7 @@ export default function About() {
               className="rounded-2xl shadow-2xl"
             />
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-lg">
-              <div className="text-2xl font-bold text-emerald-600">5★</div>
+              <div className="text-2xl font-bold text-pink-600">5★</div>
               <div className="text-sm text-gray-600">Average Rating</div>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default function About() {
                 'Comprehensive safety protocols and equipment'
               ].map((feature, index) => (
                 <div key={index} className="flex items-center space-x-3">
-                  <CheckCircle className="w-5 h-5 text-emerald-600 flex-shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-pink-600 flex-shrink-0" />
                   <span className="text-gray-700">{feature}</span>
                 </div>
               ))}
@@ -122,8 +122,8 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-8">
             {values.map((value, index) => (
               <div key={index} className="flex space-x-4">
-                <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <CheckCircle className="w-6 h-6 text-emerald-600" />
+                <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <CheckCircle className="w-6 h-6 text-pink-600" />
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h4>

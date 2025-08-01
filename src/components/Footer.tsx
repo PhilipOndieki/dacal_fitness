@@ -39,7 +39,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-lg flex items-center justify-center">
                 <Mountain className="w-6 h-6 text-white" />
               </div>
               <div>
@@ -77,7 +77,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-emerald-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-pink-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -94,7 +94,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-emerald-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-pink-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -111,7 +111,7 @@ export default function Footer() {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-emerald-400 transition-colors duration-200"
+                    className="text-gray-400 hover:text-pink-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -127,9 +127,9 @@ export default function Footer() {
                 <input
                   type="email"
                   placeholder="Your email"
-                  className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-emerald-500 text-sm"
+                  className="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-pink-500 text-sm"
                 />
-                <button className="bg-emerald-600 hover:bg-emerald-700 px-4 py-2 rounded-r-lg transition-colors duration-200">
+                <button className="bg-pink-500 hover:bg-pink-600 px-4 py-2 rounded-r-lg transition-colors duration-200">
                   <Mail className="w-4 h-4" />
                 </button>
               </div>
@@ -154,7 +154,7 @@ export default function Footer() {
                   <a
                     key={social.label}
                     href={social.href}
-                    className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-emerald-600 transition-colors duration-200"
+                    className="w-8 h-8 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pink-500 transition-colors duration-200"
                     aria-label={social.label}
                   >
                     <IconComponent className="w-4 h-4" />
@@ -165,11 +165,11 @@ export default function Footer() {
 
             {/* Legal Links */}
             <div className="flex items-center space-x-4 text-sm">
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
                 Privacy Policy
               </a>
               <span className="text-gray-600">•</span>
-              <a href="#" className="text-gray-400 hover:text-emerald-400 transition-colors">
+              <a href="#" className="text-gray-400 hover:text-pink-400 transition-colors">
                 Terms of Service
               </a>
             </div>

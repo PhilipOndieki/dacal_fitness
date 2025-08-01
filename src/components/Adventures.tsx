@@ -69,7 +69,7 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Camera className="w-4 h-4" />
             <span>Upcoming Adventures</span>
           </div>
@@ -107,7 +107,7 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
 
                 {/* Price */}
                 <div className="absolute top-4 right-4">
-                  <span className="bg-emerald-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-pink-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
                     {adventure.price}
                   </span>
                 </div>
@@ -131,15 +131,15 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
                 {/* Details */}
                 <div className="space-y-2 mb-4">
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
-                    <Calendar className="w-4 h-4 text-emerald-600" />
+                    <Calendar className="w-4 h-4 text-pink-600" />
                     <span>{adventure.date}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
-                    <Clock className="w-4 h-4 text-emerald-600" />
+                    <Clock className="w-4 h-4 text-pink-600" />
                     <span>{adventure.time}</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm text-gray-600">
-                    <MapPin className="w-4 h-4 text-emerald-600" />
+                    <MapPin className="w-4 h-4 text-pink-600" />
                     <span>{adventure.location}</span>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
                   <ul className="space-y-1">
                     {adventure.highlights.map((highlight, index) => (
                       <li key={index} className="flex items-center space-x-2 text-xs text-gray-600">
-                        <div className="w-1 h-1 bg-emerald-500 rounded-full"></div>
+                        <div className="w-1 h-1 bg-pink-500 rounded-full"></div>
                         <span>{highlight}</span>
                       </li>
                     ))}
@@ -163,7 +163,7 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
                   className={`w-full py-3 rounded-lg font-semibold transition-colors duration-200 ${
                     adventure.currentBookings >= adventure.maxParticipants
                       ? 'bg-gray-300 text-gray-500 cursor-not-allowed'
-                      : 'bg-emerald-600 text-white hover:bg-emerald-700'
+                      : 'bg-pink-500 text-white hover:bg-pink-600'
                   }`}
                   disabled={adventure.currentBookings >= adventure.maxParticipants}
                 >
@@ -175,13 +175,13 @@ export default function Adventures({ onBookAdventure }: AdventuresProps) {
         </div>
 
         {/* Bottom Section */}
-        <div className="bg-gradient-to-r from-emerald-50 to-teal-50 rounded-2xl p-8 text-center">
+        <div className="bg-gradient-to-r from-pink-50 to-rose-50 rounded-2xl p-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Don't See What You're Looking For?</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             We offer custom adventures tailored to your group's interests and skill level. 
             From corporate team building to family-friendly excursions, we can create the perfect experience.
           </p>
-          <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-200">
+          <button className="bg-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors duration-200">
             Plan Custom Adventure
           </button>
         </div>

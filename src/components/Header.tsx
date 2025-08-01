@@ -25,7 +25,7 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-emerald-600 to-teal-700 rounded-lg flex items-center justify-center">
+            <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-lg flex items-center justify-center">
               <Mountain className="w-6 h-6 text-white" />
             </div>
             <div>
@@ -40,7 +40,7 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-700 hover:text-emerald-600 font-medium transition-colors duration-200"
+                className="text-gray-700 hover:text-pink-600 font-medium transition-colors duration-200"
               >
                 {item.name}
               </a>
@@ -51,13 +51,13 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
           <div className="flex items-center space-x-4">
             {isAuthenticated ? (
               <div className="hidden md:flex items-center space-x-3">
-                <button className="flex items-center space-x-2 text-gray-700 hover:text-emerald-600 transition-colors">
+                <button className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors">
                   <Calendar className="w-4 h-4" />
                   <span className="text-sm font-medium">My Bookings</span>
                 </button>
                 <button
                   onClick={onLogout}
-                  className="flex items-center space-x-2 text-gray-700 hover:text-emerald-600 transition-colors"
+                  className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors"
                 >
                   <User className="w-4 h-4" />
                   <span className="text-sm font-medium">Logout</span>
@@ -66,7 +66,7 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
             ) : (
               <button
                 onClick={onAuthClick}
-                className="hidden md:flex items-center space-x-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-200"
+                className="hidden md:flex items-center space-x-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors duration-200"
               >
                 <User className="w-4 h-4" />
                 <span className="text-sm font-medium">Sign In</span>
@@ -91,7 +91,7 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-gray-700 hover:text-emerald-600 font-medium py-2 transition-colors duration-200"
+                  className="text-gray-700 hover:text-pink-600 font-medium py-2 transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -100,13 +100,13 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
               <div className="pt-3 border-t border-gray-200">
                 {isAuthenticated ? (
                   <div className="flex flex-col space-y-3">
-                    <button className="flex items-center space-x-2 text-gray-700 hover:text-emerald-600 transition-colors py-2">
+                    <button className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors py-2">
                       <Calendar className="w-4 h-4" />
                       <span className="text-sm font-medium">My Bookings</span>
                     </button>
                     <button
                       onClick={onLogout}
-                      className="flex items-center space-x-2 text-gray-700 hover:text-emerald-600 transition-colors py-2"
+                      className="flex items-center space-x-2 text-gray-700 hover:text-pink-600 transition-colors py-2"
                     >
                       <User className="w-4 h-4" />
                       <span className="text-sm font-medium">Logout</span>
@@ -115,7 +115,7 @@ export default function Header({ onAuthClick, isAuthenticated, onLogout }: Heade
                 ) : (
                   <button
                     onClick={onAuthClick}
-                    className="flex items-center space-x-2 bg-emerald-600 text-white px-4 py-2 rounded-lg hover:bg-emerald-700 transition-colors duration-200 w-full justify-center"
+                    className="flex items-center space-x-2 bg-pink-500 text-white px-4 py-2 rounded-lg hover:bg-pink-600 transition-colors duration-200 w-full justify-center"
                   >
                     <User className="w-4 h-4" />
                     <span className="text-sm font-medium">Sign In</span>

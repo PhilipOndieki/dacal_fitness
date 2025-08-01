@@ -33,11 +33,11 @@ export default function Testimonials() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-emerald-50 to-teal-50">
+    <section className="py-20 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center space-x-2 bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
+          <div className="inline-flex items-center space-x-2 bg-pink-100 text-pink-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Star className="w-4 h-4" />
             <span>Client Stories</span>
           </div>
@@ -58,8 +58,8 @@ export default function Testimonials() {
               className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 relative"
             >
               {/* Quote Icon */}
-              <div className="absolute top-6 right-6 w-8 h-8 bg-emerald-100 rounded-full flex items-center justify-center">
-                <Quote className="w-4 h-4 text-emerald-600" />
+              <div className="absolute top-6 right-6 w-8 h-8 bg-pink-100 rounded-full flex items-center justify-center">
+                <Quote className="w-4 h-4 text-pink-600" />
               </div>
 
               {/* Rating */}
@@ -76,7 +76,7 @@ export default function Testimonials() {
 
               {/* Service Badge */}
               <div className="mb-6">
-                <span className="inline-block bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-xs font-medium">
+                <span className="inline-block bg-pink-100 text-pink-800 px-3 py-1 rounded-full text-xs font-medium">
                   {testimonial.service}
                 </span>
               </div>
@@ -102,7 +102,7 @@ export default function Testimonials() {
           <p className="text-gray-600 mb-6">
             Ready to start your own transformation story?
           </p>
-          <button className="bg-emerald-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-emerald-700 transition-colors duration-200">
+          <button className="bg-pink-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-pink-600 transition-colors duration-200">
             Begin Your Journey
           </button>
         </div>
